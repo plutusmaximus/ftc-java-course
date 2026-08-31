@@ -97,6 +97,17 @@ The order matters:
 3. remember the robot's position before it moves;
 4. calculate motion from the resulting powers.
 
+For W and D together, `(2, 0, 0, 2)` normalizes to `(1, 0, 0, 1)`. `moveRobot(...)` converts those powers back into motion:
+
+```text
+axial   = (1 + 0 + 0 + 1) / 4 = 0.5
+lateral = (1 - 0 - 0 + 1) / 4 = 0.5
+```
+
+The robot keeps the requested diagonal direction, but each part of its movement is slower than W or D alone.
+
+A physical mecanum robot has the same limit because motor power cannot exceed full power. Diagonal movement is slower than horizontal movememnt.  Drivers compensate by anticipating combined maneuvers, or favoring forward motion when speed matters. In addition analog gamepad sticks give them finer control than pressed keyboard keys. Teams may also tune how commands share the available power, but that is outside this course.
+
 ### Run it now
 
 Run the game and compare these inputs:
