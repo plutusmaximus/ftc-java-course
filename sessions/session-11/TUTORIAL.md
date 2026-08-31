@@ -106,7 +106,7 @@ lateral = (1 - 0 - 0 + 1) / 4 = 0.5
 
 The robot keeps the requested diagonal direction, but each part of its movement is slower than W or D alone.
 
-A physical mecanum robot has the same limit because motor power cannot exceed full power. Diagonal movement is slower than horizontal movememnt.  Drivers compensate by anticipating combined maneuvers, or favoring forward motion when speed matters. In addition analog gamepad sticks give them finer control than pressed keyboard keys. Teams may also tune how commands share the available power, but that is outside this course.
+A physical mecanum robot has the same limit because motor power cannot exceed full power. Diagonal movement is slower than horizontal movement.  Drivers compensate by anticipating combined maneuvers, or favoring forward motion when speed matters. In addition analog gamepad sticks give them finer control than pressed keyboard keys. Teams may also tune how commands share the available power, but that is outside this course.
 
 ### Run it now
 
