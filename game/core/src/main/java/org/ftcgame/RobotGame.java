@@ -1,12 +1,19 @@
 package org.ftcgame;
 
 import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.utils.ScreenUtils;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
 public class RobotGame implements ApplicationListener {
+    private SpriteBatch batch;
+    private Texture robotTexture;
+
     @Override
     public void create() {
-        // Prepare your application here.
+        batch = new SpriteBatch();
+        robotTexture = new Texture("robot.png");
     }
 
     @Override
@@ -20,7 +27,7 @@ public class RobotGame implements ApplicationListener {
 
     @Override
     public void render() {
-        // Draw your application here.
+        ScreenUtils.clear(0.1f, 0.1f, 0.15f, 1);
     }
 
     @Override
@@ -35,6 +42,7 @@ public class RobotGame implements ApplicationListener {
 
     @Override
     public void dispose() {
-        // Destroy application's resources here.
+        batch.dispose();
+        robotTexture.dispose();
     }
 }
