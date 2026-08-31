@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="360" viewBox="0 0 850 450" role="img" aria-labelledby="title desc">
+  <title id="title">Projectile positions beyond each window edge</title>
+  <desc id="desc">A window outline with one projectile beyond each side. Labels identify the projectile edge and window edge compared for left, right, bottom, and top removal.</desc>
+
+  <style>
+    .label { font: 16px Arial, sans-serif; fill: #0f172a; }
+    .window { fill: #f8fafc; stroke: #334155; stroke-width: 2; }
+    .projectile { fill: #fed7aa; stroke: #000000; stroke-width: 2; }
+    .tested-edge { stroke: #dc2626; stroke-width: 3; }
+  </style>
+
+  <rect width="850" height="450" fill="#ffffff"/>
+  <rect x="245" y="105" width="360" height="240" class="window"/>
+  <text x="425" y="225" text-anchor="middle" class="label">game window</text>
+
+  <rect x="190" y="208" width="36" height="36" class="projectile"/>
+  <line x1="226" y1="208" x2="226" y2="244" class="tested-edge"/>
+  <text x="175" y="203" text-anchor="end" class="label">projectile right</text>
+  <text x="175" y="224" text-anchor="end" class="label">window left</text>
+
+  <rect x="624" y="208" width="36" height="36" class="projectile"/>
+  <line x1="624" y1="208" x2="624" y2="244" class="tested-edge"/>
+  <text x="675" y="203" class="label">projectile left</text>
+  <text x="675" y="224" class="label">window right</text>
+
+  <rect x="407" y="50" width="36" height="36" class="projectile"/>
+  <line x1="407" y1="86" x2="443" y2="86" class="tested-edge"/>
+  <text x="462" y="64" class="label">projectile bottom</text>
+  <text x="462" y="85" class="label">window top</text>
+
+  <rect x="407" y="364" width="36" height="36" class="projectile"/>
+  <line x1="407" y1="364" x2="443" y2="364" class="tested-edge"/>
+  <text x="462" y="379" class="label">projectile top</text>
+  <text x="462" y="400" class="label">window bottom</text>
+</svg>

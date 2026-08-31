@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="409" height="323" viewBox="0 0 430 340" role="img" aria-labelledby="title desc">
+  <title id="title">Two overlapping hitboxes</title>
+  <desc id="desc">A blue robot hitbox overlaps a red obstacle hitbox. The overlapping area is purple.</desc>
+
+  <style>
+    .heading { font: bold 18px Arial, sans-serif; fill: #0f172a; }
+    .label { font: 15px Arial, sans-serif; fill: #0f172a; }
+    .robot { fill: #bfdbfe; fill-opacity: 0.8; stroke: #2563eb; stroke-width: 3; }
+    .obstacle { fill: #fecaca; fill-opacity: 0.8; stroke: #dc2626; stroke-width: 3; }
+    .overlap { fill: #a78bfa; fill-opacity: 0.75; }
+    .axis { stroke: #334155; stroke-width: 2; marker-end: url(#arrow); }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <rect width="430" height="340" fill="#ffffff"/>
+  <text x="235" y="28" text-anchor="middle" class="heading">Two overlapping hitboxes</text>
+
+  <line x1="60" y1="300" x2="390" y2="300" class="axis"/>
+  <line x1="60" y1="300" x2="60" y2="45" class="axis"/>
+  <text x="400" y="306" class="label">x</text>
+  <text x="52" y="39" text-anchor="end" class="label">y</text>
+
+  <rect x="110" y="135" width="120" height="120" class="robot"/>
+  <rect x="200" y="90" width="120" height="120" class="obstacle"/>
+  <rect x="200" y="135" width="30" height="75" class="overlap"/>
+
+  <text x="155" y="230" text-anchor="middle" class="heading">robot</text>
+  <text x="260" y="125" text-anchor="middle" class="heading">obstacle</text>
+  <text x="215" y="180" text-anchor="middle" class="label">overlap</text>
+
+</svg>

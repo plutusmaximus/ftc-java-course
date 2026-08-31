@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">Mecanum wheel arrangement and wheel-power patterns</title>
+  <desc id="desc">A top-down robot shows the four mecanum wheels and their angled rollers. Keyboard controls set axial, lateral, and yaw input, which four equations convert into wheel powers. Three examples show the wheel directions produced by W, D, and Left Arrow.</desc>
+
+  <defs>
+    <marker id="blue-arrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L16,8 L0,16 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="green-arrow" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L18,9 L0,18 Z" fill="#15803d"/>
+    </marker>
+    <marker id="orange-arrow" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L16,8 L0,16 Z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .title { font: 700 25px Arial, sans-serif; fill: #0f172a; }
+      .heading { font: 700 20px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 17px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 15px Arial, sans-serif; fill: #334155; }
+      .formula { font: 17px "Courier New", monospace; fill: #0f172a; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; }
+      .body { fill: #dbeafe; stroke: #1e3a8a; stroke-width: 3; }
+      .wheel { fill: #334155; stroke: #0f172a; stroke-width: 2; }
+      .roller { stroke: #f8fafc; stroke-width: 5; stroke-linecap: round; }
+      .positive { stroke: #2563eb; stroke-width: 4; marker-end: url(#blue-arrow); }
+      .negative { stroke: #ea580c; stroke-width: 4; marker-end: url(#orange-arrow); }
+      .motion { stroke: #15803d; stroke-width: 6; marker-end: url(#green-arrow); fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1280" height="800" rx="18" fill="#f8fafc"/>
+  <text x="640" y="42" text-anchor="middle" class="title">Four wheel powers describe mecanum motion</text>
+
+  <!-- Wheel arrangement -->
+  <rect x="24" y="66" width="520" height="400" rx="14" class="panel"/>
+  <text x="284" y="101" text-anchor="middle" class="heading">Top view and wheel names</text>
+  <line x1="284" y1="166" x2="284" y2="122" class="motion"/>
+  <text x="302" y="139" class="label" fill="#15803d">robot front</text>
+
+  <rect x="170" y="152" width="228" height="240" rx="30" class="body"/>
+  <circle cx="284" cy="272" r="16" fill="#1e3a8a"/>
+
+  <!-- Front-left wheel: rollers slope down-right -->
+  <g>
+    <rect x="122" y="172" width="68" height="92" rx="12" class="wheel"/>
+    <line x1="130" y1="191" x2="158" y2="219" class="roller"/>
+    <line x1="148" y1="181" x2="181" y2="214" class="roller"/>
+    <line x1="130" y1="227" x2="158" y2="255" class="roller"/>
+    <line x1="166" y1="227" x2="182" y2="243" class="roller"/>
+  </g>
+  <!-- Front-right wheel: rollers slope up-right -->
+  <g>
+    <rect x="378" y="172" width="68" height="92" rx="12" class="wheel"/>
+    <line x1="388" y1="214" x2="421" y2="181" class="roller"/>
+    <line x1="406" y1="224" x2="438" y2="192" class="roller"/>
+    <line x1="388" y1="250" x2="421" y2="217" class="roller"/>
+    <line x1="424" y1="250" x2="438" y2="236" class="roller"/>
+  </g>
+  <!-- Back-left wheel: rollers slope up-right -->
+  <g>
+    <rect x="122" y="280" width="68" height="92" rx="12" class="wheel"/>
+    <line x1="132" y1="322" x2="165" y2="289" class="roller"/>
+    <line x1="150" y1="332" x2="182" y2="300" class="roller"/>
+    <line x1="132" y1="358" x2="165" y2="325" class="roller"/>
+    <line x1="168" y1="358" x2="182" y2="344" class="roller"/>
+  </g>
+  <!-- Back-right wheel: rollers slope down-right -->
+  <g>
+    <rect x="378" y="280" width="68" height="92" rx="12" class="wheel"/>
+    <line x1="386" y1="299" x2="414" y2="327" class="roller"/>
+    <line x1="404" y1="289" x2="437" y2="322" class="roller"/>
+    <line x1="386" y1="335" x2="414" y2="363" class="roller"/>
+    <line x1="422" y1="335" x2="438" y2="351" class="roller"/>
+  </g>
+
+  <text x="108" y="164" text-anchor="end" class="label">front-left</text>
+  <text x="460" y="164" class="label">front-right</text>
+  <text x="108" y="386" text-anchor="end" class="label">back-left</text>
+  <text x="460" y="386" class="label">back-right</text>
+  <text x="284" y="427" text-anchor="middle" class="small">Opposite roller angles let wheel combinations</text>
+  <text x="284" y="449" text-anchor="middle" class="small">produce forward, sideways, or turning motion.</text>
+
+  <!-- Input axes and wheel-power equations -->
+  <rect x="566" y="66" width="690" height="400" rx="14" class="panel"/>
+  <text x="911" y="101" text-anchor="middle" class="heading">Keyboard axes feed the mecanum equations</text>
+  <text x="602" y="139" class="formula">W/S          axial      +1 / −1</text>
+  <text x="602" y="175" class="formula">D/A          lateral    +1 / −1</text>
+  <text x="602" y="211" class="formula">Left/Right   yaw        +1 / −1</text>
+  <text x="602" y="255" class="formula">FL = axial + lateral − yaw</text>
+  <text x="602" y="291" class="formula">FR = axial − lateral + yaw</text>
+  <text x="602" y="327" class="formula">BL = axial − lateral − yaw</text>
+  <text x="602" y="363" class="formula">BR = axial + lateral + yaw</text>
+  <text x="602" y="405" class="small">The three input axes contribute to all four wheel powers.</text>
+  <text x="602" y="431" class="small">The resulting wheel-power pattern determines the motion.</text>
+
+  <!-- Motion examples -->
+  <rect x="24" y="488" width="392" height="286" rx="14" class="panel"/>
+  <rect x="444" y="488" width="392" height="286" rx="14" class="panel"/>
+  <rect x="864" y="488" width="392" height="286" rx="14" class="panel"/>
+
+  <!-- Forward example -->
+  <text x="220" y="523" text-anchor="middle" class="heading">W pressed</text>
+  <rect x="150" y="558" width="140" height="128" rx="20" class="body"/>
+  <line x1="162" y1="621" x2="162" y2="576" class="positive"/>
+  <line x1="278" y1="621" x2="278" y2="576" class="positive"/>
+  <line x1="162" y1="681" x2="162" y2="636" class="positive"/>
+  <line x1="278" y1="681" x2="278" y2="636" class="positive"/>
+  <line x1="220" y1="604" x2="220" y2="548" class="motion"/>
+  <text x="220" y="716" text-anchor="middle" class="formula">(+1, +1, +1, +1)</text>
+  <text x="220" y="746" text-anchor="middle" class="label" fill="#15803d">all wheels push forward</text>
+
+  <!-- Strafe example -->
+  <text x="640" y="523" text-anchor="middle" class="heading">D pressed</text>
+  <rect x="570" y="558" width="140" height="128" rx="20" class="body"/>
+  <line x1="582" y1="621" x2="582" y2="576" class="positive"/>
+  <line x1="698" y1="576" x2="698" y2="621" class="negative"/>
+  <line x1="582" y1="636" x2="582" y2="681" class="negative"/>
+  <line x1="698" y1="681" x2="698" y2="636" class="positive"/>
+  <line x1="640" y1="622" x2="740" y2="622" class="motion"/>
+  <text x="640" y="716" text-anchor="middle" class="formula">(+1, −1, −1, +1)</text>
+  <text x="640" y="746" text-anchor="middle" class="label" fill="#15803d">angled rollers combine sideways</text>
+
+  <!-- Turn example -->
+  <text x="1060" y="523" text-anchor="middle" class="heading">Left Arrow pressed</text>
+  <rect x="990" y="558" width="140" height="128" rx="20" class="body"/>
+  <line x1="1002" y1="576" x2="1002" y2="621" class="negative"/>
+  <line x1="1118" y1="621" x2="1118" y2="576" class="positive"/>
+  <line x1="1002" y1="636" x2="1002" y2="681" class="negative"/>
+  <line x1="1118" y1="681" x2="1118" y2="636" class="positive"/>
+  <path d="M1088 618 A48 48 0 1 0 1032 670" class="motion"/>
+  <text x="1060" y="716" text-anchor="middle" class="formula">(−1, +1, −1, +1)</text>
+  <text x="1060" y="746" text-anchor="middle" class="label" fill="#15803d">left back, right forward: CCW</text>
+</svg>
