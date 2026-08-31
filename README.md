@@ -55,3 +55,9 @@ Each reference game is a complete project showing the required result at the end
 9. [Session 9 reference game](reference-games/session-9/)
 10. [Session 10 reference game](reference-games/session-10/)
 11. [Session 11 reference game](reference-games/session-11/)
+
+## License
+
+Copyright 2026 Kevin Baca
+
+Licensed under the [Apache License, Version 2.0](LICENSE). Existing third-party components retain their original licenses and copyright notices.
