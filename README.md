@@ -1,8 +1,32 @@
-# FTC Game Programming Course
+# Build a Robot Game. Learn Java for FTC.
 
-Learn Java by building a 2D robot game with libGDX. Over eleven sessions, you will add movement, collisions, collectible and fired balls, scoring, robot-relative controls, and mecanum wheel powers.
+Create a playable 2D robot game while learning Java, debugging, and drivetrain concepts that connect directly to FTC robotics.
 
-Start with the [course outline](COURSE_OUTLINE.md), then follow the tutorials in order:
+**11 sessions · 90 minutes each · No Java experience required**
+
+![The completed robot game with a robot, obstacles, balls, and a goal](images/session-11.png)
+
+You will begin by moving one robot around the screen. By the final session, you will have built collisions, collectible balls, directional firing, scoring, and a four-wheel mecanum drive.
+
+## What you will learn
+
+- Use Java variables, conditionals, loops, methods, and classes to solve visible game problems.
+- Work with coordinates, angles, vectors, and mecanum wheel-power calculations.
+- Diagnose problems by observing the game, forming a hypothesis, and experimenting with the code.
+- Build, run, and change a Java project in Android Studio.
+- Save and share your work with Git and GitHub.
+
+## Start small and build from there
+
+In the first session, you draw a robot and make it move with the keyboard.
+
+![The Session 1 game with a movable robot](images/session-1.png)
+
+Each later session adds one meaningful capability. You will run the game frequently, see the effect of each change, and finish every session with a playable result.
+
+## Course sessions
+
+Read the [course outline](COURSE_OUTLINE.md) for an overview, then follow the tutorials in order:
 
 1. [Make the Robot Move](sessions/session-1/TUTORIAL.md)
 2. [Make Movement Consistent](sessions/session-2/TUTORIAL.md)
@@ -18,7 +42,7 @@ Start with the [course outline](COURSE_OUTLINE.md), then follow the tutorials in
 
 ## Reference games
 
-Each reference game is a complete project showing the required result at the end of that session. Use one to compare your code with the expected result or to recover before starting the next session.
+Each reference game is a complete project showing the required result at the end of that session. Use one to compare your code with the expected result or to catch up before starting the next session.
 
 1. [Session 1 reference game](reference-games/session-1/)
 2. [Session 2 reference game](reference-games/session-2/)
