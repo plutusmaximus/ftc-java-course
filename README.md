@@ -40,6 +40,10 @@ Read the [course outline](COURSE_OUTLINE.md) for an overview, then follow the tu
 10. [Drive with Mecanum Wheels](sessions/session-10/TUTORIAL.md)
 11. [Normalize Wheel Powers](sessions/session-11/TUTORIAL.md)
 
+## Getting started
+
+The [Getting Started guide](GETTING_STARTED.md) is for self-paced learners who need to prepare Android Studio, clone the course, open and run the starter game, and save their progress with Git. If you are taking this course with an instructor, follow your instructor's setup directions instead.
+
 ## Reference games
 
 Each reference game is a complete project showing the required result at the end of that session. Use one to compare your code with the expected result or to catch up before starting the next session.
