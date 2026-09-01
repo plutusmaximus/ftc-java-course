@@ -119,28 +119,32 @@ Hamburger button (☰)
 → Clone
 ```
 
-Android Studio initially opens the whole course repository. To run the starter, open its `game` folder as a separate Android Studio project:
+### Open the starter game project — required
+
+Android Studio initially opens the whole course repository, which is not the runnable game project. Do not try to run it. Open the starter's `game` folder as a separate Android Studio project:
 
 ```text
 Hamburger button (☰)
 → File
 → Open
+→ Open the cloned ftc-java-course folder
 → Select game
 → Open
+→ This Window, if prompted
 → Trust Project, if prompted
 ```
 
-**Gradle** is the tool that reads the project's setup files and prepares the project. Android Studio performs a **Gradle sync** to learn how the project is organized. During the first sync, Gradle also downloads the **dependencies**, which are libraries and other outside code the game needs. This may take several minutes.
+Look at the **Project** panel on the left side of the Android Studio window. Its top folder should be named `game`. If it is not, stop and open the `game` folder now.
+
+**Gradle** is a tool that manages the project's setup, libraries, and build steps. Android Studio now runs a **Gradle sync** to prepare the game. The first sync may take several minutes.
 
 Wait for the Gradle sync to finish before continuing.
 
 Before changing any code, run the starter.
 
-```text
-Locate the green triangle (the Run button) at the top of the Android Studio window.
-→ Select RobotGame in the dropdown menu to the left of the triangle.
-→ Click the green triangle button.
-```
+At the top of the Android Studio window, find the green triangular **Run** button. The menu immediately to its left should show `RobotGame`. If it does not, check that you opened the `game` folder.
+
+When the menu shows `RobotGame`, click the **Run** button.
 
 A blank, dark game window should open. The robot is not visible yet; making it visible is part of the first session. Return to Android Studio and click the red Stop button.
 
