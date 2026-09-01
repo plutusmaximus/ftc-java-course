@@ -101,7 +101,7 @@ From the Android Studio welcome screen, clone the course like this:
 
 ```text
 Clone Repository
-→ URL: https://github.com/plutusmaximus/ftc-java-course.git
+→ URL: https://github.com/SageCreekRobotics/ftc-java-course.git
 → Choose where to save the course on your computer
 → Clone
 ```
@@ -114,7 +114,7 @@ Hamburger button (☰)
 → New
 → Project from Version Control
 → Version control: Git
-→ URL: https://github.com/plutusmaximus/ftc-java-course.git
+→ URL: https://github.com/SageCreekRobotics/ftc-java-course.git
 → Choose where to save the course on your computer
 → Clone
 ```
