@@ -268,21 +268,36 @@ Ask for help if one of these checks does not work. Fixing the game before saving
 
 ## 11. Commit and push
 
-Use Android Studio's Git tools to save the finished work:
+A **commit** is a named checkpoint in the project's history. **Pushing** uploads local commits to GitHub.
 
-1. Open the Commit window.
-2. Confirm that `RobotGame.java` is the file you changed.
-3. Review the highlighted changes.
-4. Enter this commit message:
+Use Android Studio's Git tools to create the checkpoint:
+
+1. Open the Commit window:
+
+   ```text
+   Hamburger button (☰)
+   → Git
+   → Commit
+   ```
+
+2. In the Changes list, select the checkbox beside `RobotGame.java`.
+3. Click `RobotGame.java` to review its highlighted changes.
+4. Enter this message in the Commit Message box:
 
    ```text
    Add robot movement
    ```
 
-5. Commit the changes.
-6. Push the commit to the assigned GitHub repository.
+5. Click **Commit**.
+6. Open the Push window and upload the commit:
 
-A commit is a named checkpoint in the project's history. Pushing uploads local commits to GitHub.
+   ```text
+   Hamburger button (☰)
+   → Git
+   → Push
+   → Review the Add robot movement commit
+   → Push
+   ```
 
 > **Final checkpoint:** The game still runs, and the `Add robot movement` commit has been pushed.
 

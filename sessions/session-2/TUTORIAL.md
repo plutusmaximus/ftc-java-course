@@ -279,18 +279,33 @@ Ask for help if any check fails. Fix the game and run the checklist again before
 
 ## 10. Commit and push
 
-Use Android Studio's Git tools:
+Repeat the Android Studio Git workflow from Session 1:
 
-1. Open the Commit window.
-2. Review the changed Java file.
-3. Enter this commit message:
+1. Open the Commit window:
+
+   ```text
+   Hamburger button (☰)
+   → Git
+   → Commit
+   ```
+
+2. Select `RobotGame.java` and review its highlighted changes.
+3. Enter this message in the Commit Message box:
 
    ```text
    Make movement frame-rate independent
    ```
 
-4. Commit the changes.
-5. Push the commit to your assigned GitHub repository.
+4. Click **Commit**.
+5. Open the Push window, review the commit, and upload it:
+
+   ```text
+   Hamburger button (☰)
+   → Git
+   → Push
+   → Review the commit
+   → Push
+   ```
 
 > **Final checkpoint:** The finished game works, and the `Make movement frame-rate independent` commit has been pushed.
 
