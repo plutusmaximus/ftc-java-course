@@ -107,7 +107,7 @@ Get from VCS
 → Clone
 ```
 
-If Android Studio already has another project open, start here instead. The **hamburger button** (☰) is in the upper left corner of the Android Studio window.  On Macs it appears in the menu bar at the top of the screen. It's called a hamburger because it resembles a hamburger:
+If Android Studio already has another project open, start here instead. On Windows, the **hamburger button** (☰) is in the upper-left corner of the Android Studio window. It's called a hamburger because it resembles a hamburger. On Macs, skip the hamburger-button step below and choose **File** from the menu bar at the top of the screen:
 
 ```text
 Hamburger button (☰)
