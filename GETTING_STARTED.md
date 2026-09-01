@@ -18,11 +18,23 @@ libGDX is a **library**, which means it is a collection of ready-made code that 
 
 ## Set up the project
 
-### Install Android Studio and Git
+### Install Git and Android Studio
 
-Install Android Studio and Git before continuing. You need both programs, but you do not need a GitHub account.
+Install Git and Android Studio before continuing. You need both programs, but you do not need a GitHub account.
 
 #### Windows
+
+Download and install Git:
+
+```text
+Web browser
+→ Open https://git-scm.com/install/windows
+→ Download Git for Windows
+→ Double-click the downloaded installer
+→ Keep the default choices
+→ Install
+→ Finish
+```
 
 Download Android Studio from its official website:
 
@@ -45,19 +57,20 @@ Downloads folder
 → Finish
 ```
 
-Download and install Git:
+#### macOS
+
+Apple includes Git with its Xcode Command Line Tools. Install those tools with this one terminal command:
 
 ```text
-Web browser
-→ Open https://git-scm.com/install/windows
-→ Download Git for Windows
-→ Double-click the downloaded installer
-→ Keep the default choices
+Applications
+→ Utilities
+→ Terminal
+→ Enter: xcode-select --install
+→ Press Return
 → Install
-→ Finish
 ```
 
-#### macOS
+This command only installs the tools that include Git. You will do your Git work by clicking commands in Android Studio, not by entering Git commands in the terminal.
 
 Download Android Studio from its official website. Choose the download that matches whether your Mac has an Apple or Intel chip:
 
@@ -80,19 +93,6 @@ Downloads folder
 → Complete the Setup Wizard
 ```
 
-Apple includes Git with its Xcode Command Line Tools. Install those tools with this one terminal command:
-
-```text
-Applications
-→ Utilities
-→ Terminal
-→ Enter: xcode-select --install
-→ Press Return
-→ Install
-```
-
-This command only installs the tools that include Git. You will do your Git work by clicking commands in Android Studio, not by entering Git commands in the terminal.
-
 ### Clone the project
 
 You will **clone** the project, which means downloading a copy to your computer. Git will then be able to record your own work on that computer.
@@ -100,8 +100,7 @@ You will **clone** the project, which means downloading a copy to your computer.
 From the Android Studio welcome screen, clone the course like this:
 
 ```text
-Get from VCS
-→ Version control: Git
+Clone Repository
 → URL: https://github.com/plutusmaximus/ftc-java-course.git
 → Choose where to save the course on your computer
 → Clone
@@ -120,13 +119,12 @@ Hamburger button (☰)
 → Clone
 ```
 
-The repository contains the course materials and several game projects. A **directory** is another name for a folder. Open only the starter `game` directory as your Android Studio project:
+Android Studio initially opens the whole course repository. To run the starter, open its `game` folder as a separate Android Studio project:
 
 ```text
 Hamburger button (☰)
 → File
 → Open
-→ Open the cloned ftc-java-course directory
 → Select game
 → Open
 → Trust Project, if prompted
@@ -136,13 +134,12 @@ Hamburger button (☰)
 
 Wait for the Gradle sync to finish before continuing.
 
-Before changing any code, run the starter. The supplied **run configuration** is a saved set of instructions that tells Android Studio how to start this game:
+Before changing any code, run the starter.
 
 ```text
-Main toolbar near the top of the Android Studio window
-→ Run-configuration menu
-→ RobotGame
-→ Green triangular Run button next to the run configuration
+Locate the green triangle (the Run button) at the top of the Android Studio window.
+→ Select RobotGame in the dropdown menu to the left of the triangle.
+→ Click the green triangle button.
 ```
 
 A blank, dark game window should open. The robot is not visible yet; making it visible is part of the first session. Return to Android Studio and click the red Stop button.
