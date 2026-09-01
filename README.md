@@ -10,7 +10,7 @@ You will begin by moving one robot around the screen. By the final session, you 
 
 ## What you will learn
 
-- Use Java variables, conditionals, loops, methods, and classes to solve visible game problems.
+- Use Java variables, conditionals, loops, methods, and classes to solve game problems.
 - Work with coordinates, angles, vectors, and mecanum wheel-power calculations.
 - Diagnose problems by observing the game, forming a hypothesis, and experimenting with the code.
 - Build, run, and change a Java project in Android Studio.

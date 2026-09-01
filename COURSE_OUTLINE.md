@@ -24,7 +24,7 @@ Add an obstacle that stops the robot at its edge. Inline rectangular collision d
 
 ### Session 4 — Collect and Score
 
-Add collectible balls and scoring. Managing several balls introduces loops, collections, parameters, a Boolean return value, and named methods that keep `render()` readable.
+Add collectible balls and scoring. Managing several balls introduces loops, collections, parameters, a Boolean return value, and named methods that keep the code readable.
 
 ### Session 5 — Fire Projectiles
 
@@ -36,7 +36,7 @@ Add a goal and award points for successful shots. Missed projectiles disappear a
 
 ### Session 7 — Rotate the Robot
 
-Add rotation controls and draw the robot at its stored angle while movement remains screen-aligned.
+Add rotation controls and draw the robot at its stored angle.
 
 ### Session 8 — Drive in the Direction the Robot Faces
 
@@ -48,11 +48,11 @@ Make fired balls travel in the direction the robot is facing and disappear when 
 
 ### Session 10 — Drive with Mecanum Wheels
 
-Replace direct high-level movement with four mecanum wheel powers. Uses kinematics to connect the game to FTC drivetrain programming while reinforcing methods, arithmetic, vectors, and debugging.
+Replace direct robot movement with four mecanum wheel powers. Uses kinematics to connect the game to FTC drivetrain programming while reinforcing methods, arithmetic, vectors, and debugging.
 
 ### Session 11 — Normalize Wheel Powers
 
-Keep combined mecanum commands within the allowed wheel-power range while preserving their proportions. Reinforces arithmetic, normalization, and controlled debugging.
+Keep combined mecanum wheel power within allowed limits while preserving their proportions. Reinforces arithmetic, normalization, and controlled debugging.  Mirrors actual maximum power limitations on real physical robot drivetrains.
 
 ## Final outcome
 
